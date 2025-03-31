@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Assignment</title>
+    <link rel="stylesheet" href="style.css"/> <!-- External CSS file -->
+</head>
+
+<body>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Popular Electric Vehicle Brands</h2>
+        <ol type="I">
+            <li>Tesla</li>
+            <li>Rivian</li>
+            <li>BYD</li>
+            <li>NIO</li>
+            <li>Polestar</li>
+        </ol>
+    </section>
+
+    <!-- External Image from Pexels -->
+    <section>
+        <h2>Featured Car</h2>
+        <img src="https://images.pexels.com/photos/19410407/pexels-photo-19410407/free-photo-of-white-22-infiniti-qx60-suv.jpeg?
+        auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Luxury SUV from Pexels" width="50%">
+    </section>
+
+    <!-- Contacts Table -->
+    <section>
+        <h2>Contact Information</h2>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Ford</td>
+                <td>USA</td>
+                <td>+1 222 222</td>
+                <td>ford@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Toyota</td>
+                <td>Japan</td>
+                <td>+81 333 333</td>
+                <td>toyota@gmail.com</td>
+            </tr>
+            <tr>
+                <td>BMW</td>
+                <td>Germany</td>
+                <td>+49 144 444</td>
+                <td>bmw@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Hyundai</td>
+                <td>South Korea</td>
+                <td>+82 555 555</td>
+                <td>hyundai@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Ferrari</td>
+                <td>Italy</td>
+                <td>+39 666 666</td>
+                <td>ferrari@gmail.com</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="submit.php" method="POST" class="register">
+            
+            <!-- Name Field -->
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="6">
+            <br>
+
+            <!-- Date Field -->
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="" name="dob" required>
+            <br>
+
+            <!-- Gender Radio Buttons -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <br>
+
+            <!-- Interests Checkboxes -->
+            <label>Interests:</label><br>
+            <input type="checkbox" id="coding" name="interests" value="coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="gaming" name="interests" value="gaming">
+            <label for="gaming">Gaming</label>
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label>
+            <br><br>
+
+            <!-- Country Dropdown -->
+            <label for="country">Select Your Country:</label><br>
+            <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <option value="Kenya">Kenya</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="India">India</option>
+                <option value="Germany">Germany</option>
+            </select>
+            <br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <!-- Multimedia Elements -->
+    <section>
+        <h2>Multimedia Section</h2>
+
+        <!-- Audio Element -->
+        <h3>Relaxing Background Music</h3>
+        <audio controls >
+            <source src="music.mp3" type="audio/mp3" >
+            Your browser does not support the audio tag.
+        </audio>
+
+        <!-- Video Element -->
+        <h3>Introduction to Videos</h3>
+        
+        <iframe width="200" height="100"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+           
+    </section>
+
+</body>
+</html>
